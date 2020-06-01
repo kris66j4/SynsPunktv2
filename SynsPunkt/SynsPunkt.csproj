@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FBDCE0BF-571D-4917-A02A-2FFA3191130A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SynsPunkt</RootNamespace>
+    <AssemblyName>SynsPunkt</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.1\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Hovedmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hovedmenu.Designer.cs">
+      <DependentUpon>Hovedmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpretVare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpretVare.Designer.cs">
+      <DependentUpon>OpretVare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpretKunde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpretKunde.Designer.cs">
+      <DependentUpon>OpretKunde.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ordre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ordre.Designer.cs">
+      <DependentUpon>Ordre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdreClass.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rådgivning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rådgivning.Designer.cs">
+      <DependentUpon>Rådgivning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SletKunde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SletKunde.Designer.cs">
+      <DependentUpon>SletKunde.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SletVare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SletVare.Designer.cs">
+      <DependentUpon>SletVare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vare.cs" />
+    <Compile Include="ÆndreKunde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÆndreKunde.Designer.cs">
+      <DependentUpon>ÆndreKunde.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÆndreVare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÆndreVare.Designer.cs">
+      <DependentUpon>ÆndreVare.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Hovedmenu.resx">
+      <DependentUpon>Hovedmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpretVare.resx">
+      <DependentUpon>OpretVare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpretKunde.resx">
+      <DependentUpon>OpretKunde.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ordre.resx">
+      <DependentUpon>Ordre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Rådgivning.resx">
+      <DependentUpon>Rådgivning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SletKunde.resx">
+      <DependentUpon>SletKunde.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SletVare.resx">
+      <DependentUpon>SletVare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÆndreKunde.resx">
+      <DependentUpon>ÆndreKunde.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÆndreVare.resx">
+      <DependentUpon>ÆndreVare.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
