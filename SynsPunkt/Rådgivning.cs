@@ -70,7 +70,6 @@ namespace SynsPunkt
             SqlDataReader sqld = null;
             SqlCommand cmd = new SqlCommand(q, con);
             sqld = cmd.ExecuteReader();
-            listBox1.Items.Add("Varenr	Gruppe	Mærke   Type    Stk.    Pris");
             if (sqld.HasRows)
             {
                 while (sqld.Read())

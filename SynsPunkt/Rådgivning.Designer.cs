@@ -115,7 +115,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 163);
+            this.label4.Location = new System.Drawing.Point(28, 159);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 13);
             this.label4.TabIndex = 8;
@@ -136,7 +136,7 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Items.AddRange(new object[] {
-            "Køn\tMærke\tType         Farve            Størrelse\t       Pris"});
+            "Køn\tMærke\t Type          Farve             Størrelse\t       Pris"});
             this.listBox1.Location = new System.Drawing.Point(251, 44);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(527, 290);
@@ -163,11 +163,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(28, 222);
+            this.label6.Location = new System.Drawing.Point(25, 222);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(24, 13);
+            this.label6.Size = new System.Drawing.Size(47, 13);
             this.label6.TabIndex = 13;
-            this.label6.Text = "Pris";
+            this.label6.Text = "Max Pris";
             // 
             // Rådgivning
             // 
