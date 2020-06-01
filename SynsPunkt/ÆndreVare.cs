@@ -25,7 +25,7 @@ namespace SynsPunkt
                 con.Open();
                 if (con.State == System.Data.ConnectionState.Open)
                 {
-                    string q = $"update vare set varegruppe='{txtBox1.Text}',mærke='{textBox2.Text}',glastype='{textBox3.Text}',lagerstatus='{textBox4.Text}',pris='{textBox5.Text}',farve='{textBox6.Text}',køn='{textBox7.Text}'" +
+                    string q = $"update vare set varegruppe='{txtBox1.Text}',mærke='{textBox2.Text}',glastype='{textBox3.Text}',lagerstatus='{textBox4.Text}',pris='{textBox5.Text}',farve='{textBox6.Text}',køn='{textBox7.Text}',størrelse='{textBox8.Text}'" +
               $"where vnr={textBox1.Text}";
                     SqlCommand cmd = new SqlCommand(q, con);
                     cmd.ExecuteNonQuery();

@@ -44,6 +44,8 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -60,7 +62,7 @@
             // txtBox1
             // 
             this.txtBox1.Location = new System.Drawing.Point(80, 73);
-            this.txtBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBox1.Margin = new System.Windows.Forms.Padding(2);
             this.txtBox1.Name = "txtBox1";
             this.txtBox1.Size = new System.Drawing.Size(179, 20);
             this.txtBox1.TabIndex = 1;
@@ -69,7 +71,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(342, 119);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 37);
             this.button1.TabIndex = 2;
@@ -80,7 +82,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(80, 96);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(179, 20);
             this.textBox2.TabIndex = 3;
@@ -88,7 +90,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(80, 119);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(179, 20);
             this.textBox3.TabIndex = 4;
@@ -96,7 +98,7 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(80, 141);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(179, 20);
             this.textBox4.TabIndex = 5;
@@ -104,7 +106,7 @@
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(80, 164);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(179, 20);
             this.textBox5.TabIndex = 6;
@@ -162,7 +164,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(80, 188);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(179, 20);
             this.textBox1.TabIndex = 12;
@@ -170,7 +172,7 @@
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(80, 211);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(179, 20);
             this.textBox6.TabIndex = 13;
@@ -195,11 +197,32 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Køn";
             // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(80, 235);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(179, 20);
+            this.textBox7.TabIndex = 16;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(14, 235);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(45, 13);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Størelse";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
             // OpretVare
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.textBox7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox6);
@@ -216,7 +239,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "OpretVare";
             this.Text = "Form2";
             this.ResumeLayout(false);
@@ -242,5 +265,7 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label9;
     }
 }

@@ -24,7 +24,7 @@ namespace SynsPunkt
             con.Open();
             if (con.State == System.Data.ConnectionState.Open)
             {
-                string q = "insert into vare(varegruppe, mærke, glastype, lagerstatus, pris, farve, køn) values ('" + txtBox1.Text.ToString() + "','" + textBox2.Text.ToString() + "','" + textBox3.Text.ToString() + "','"+ textBox4.Text.ToString() + "','"+ textBox5.Text.ToString() + "','" + textBox1.Text.ToString() + "','" + textBox6.Text.ToString()+"')";
+                string q = "insert into vare(varegruppe, mærke, glastype, lagerstatus, pris, farve, køn, størrelse) values ('" + txtBox1.Text.ToString() + "','" + textBox2.Text.ToString() + "','" + textBox3.Text.ToString() + "'," + textBox4.Text.ToString() + "," + textBox5.Text.ToString() + ",'" + textBox1.Text.ToString() + "','" + textBox6.Text.ToString() + "','" + textBox7.Text.ToString() + "')";
                 SqlCommand cmd = new SqlCommand(q, con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Fint");
@@ -36,6 +36,11 @@ namespace SynsPunkt
         }
 
         private void txtBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
         {
 
         }
